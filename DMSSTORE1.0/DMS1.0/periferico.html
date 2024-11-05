@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProdutosDMS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/IMG/images/Raposaicon-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <div class="logo-container">
+                <img src="/IMG/images/Raposaicon.png" alt="Ícone de Raposa" class="logo-icon">
+                <a href="index.html"><h1 class="logo">DMS<span>TECH</span></h1> </a>
+            </div>
+            <div class="search-container">
+                <input type="search" placeholder="Digite o que você procura">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="botao-branco" href="index.html">Home</a></li>
+                    <li><a class="botao-branco"href="produtos.html">Produtos</a></li>
+                    <li><a class="botao-branco"href="sobre.html">Sobre</a></li>
+                    <li><a class="botao-branco"href="contato.html">Contato</a></li>
+                    <li><a class="botao-branco"href="conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <a href="carrinho.html"><img src="/IMG/images/cart.png" class="carrinho-menu"/></a>
+                <img src="/IMG/images/menu.png" class="menu-button" />
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <main>
+
+        <div class="departamentos-container">
+            <div id="departamentosButton" class="departamentos-button">
+                <img src="/IMG/images/menu.png" alt="">
+                <span>Departamentos</span>
+            </div>
+            <ul id="categorias" class="categorias-menu">
+                <li><a href="computador.html">Computadores</a></li>
+                <li><a href="periferico.html">Periféricos</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+            </ul>
+        </div>
+        <script>
+            document.getElementById("departamentosButton").addEventListener("click", function (event) {
+                var categorias = document.getElementById("categorias");
+                categorias.style.display = categorias.style.display === "block" ? "none" : "block";
+                event.stopPropagation(); // Impede a propagação do evento de clique para o documento
+            });
+
+            // Fechar o menu de categorias se clicar em qualquer lugar fora dele
+            document.addEventListener("click", function (event) {
+                var categorias = document.getElementById("categorias");
+                if (categorias.style.display === "block") {
+                    categorias.style.display = "none";
+                }
+            });
+
+
+        </script>
+        </div>
+
+
+
+        <div class="page-inner-content">
+            <h3 class="section-title">Produtos</h3>
+            <div class="subtitle-underline"></div>
+            <div class="cols cols-4">
+                <!-- Produto 4 -->
+                <div class="product">
+                    <img src="/IMG/images/perifericos/periferico1.jpg" alt="" />
+                    <p class="product-name">Mouse Gamer Logitech</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$590</span></p>
+                </div>
+                <!-- Produto 5 -->
+                <div class="product">
+                    <img src="/IMG/images/perifericos/periferico2.jpg" alt="" />
+                    <p class="product-name">Mouse Gamer Redragon Cobra</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$119</span></p>
+                </div>
+                <!-- Produto 6 -->
+                <div class="product">
+                    <img src="/IMG/images/perifericos/periferico3.jpg" alt="" />
+                    <p class="product-name">Teclado Gamer Redragon Fizz</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$450</span></p>
+                </div>
+                <!-- Produto 7 -->
+                <div class="product">
+                    <img src="/IMG/images/perifericos/periferico4.jpg" alt="" />
+                    <p class="product-name">Teclado Mecanico Sakura Edition</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$649</span></p>
+                </div>
+                <!-- Produto 8 -->
+                <div class="product">
+                    <img src="/IMG/images/perifericos/periferico5.jpg" alt="" />
+                    <p class="product-name">Headset Gamer White</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$190</span></p>
+                </div>
+                <!-- Produto 9 -->
+                <div class="product">
+                    <img src="/IMG/images/perifericos/periferico6.jpg" alt="" />
+                    <p class="product-name">Headset Gamer Fifine Superframe</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$219</span></p>
+                </div>
+                <!-- Produto 10 -->
+                <div class="product">
+                    <img src="/IMG/images/perifericos/periferico7.jpg" alt="" />
+                    <p class="product-name">Microfone Gamer Fifine SuperFrame</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$199</span></p>
+                </div>
+                <!-- Produto 11 -->
+                <div class="product">
+                    <img src="/IMG/images/perifericos/periferico8.jpg" alt="" />
+                    <p class="product-name">Cadeira Gamer Ninja Edição Especial Madara</p>
+                    <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    <p class="product-price"><span>R$539</span></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="gray-background">
+            <div class="page-inner-content footer-content">
+                <div class="download-options">
+                    <p>Baixe nosso aplicativo</p>
+                    <p>Baixe nosso aplicativo para Android e IOS</p>
+                    <div>
+                        <img src="/IMG/images/app-store.png" alt="" />
+                        <img src="/IMG/images/play-store.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="logo-footer">
+                    <h1 class="logo">DMS<span>TECH</span></h1>
+                    <p>Tecnologia avançada, serviço excepcional
+                        bem-vindo à nossa loja.
+                    </p>
+                </div>
+
+                <div class="links-footer">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog post</li>
+                        <li>Políticas</li>
+                        <li>Torne-se afiliado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="page-inner-content">
+
+            <div class="page-inner-content copyright">
+                <p>Copyright 2024 - DMSTECH - todos direitos reservados</p>
+            </div>
+        </footer>
+</body>
+
+</html>
